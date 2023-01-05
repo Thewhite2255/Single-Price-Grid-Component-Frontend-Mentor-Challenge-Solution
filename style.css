@@ -1,0 +1,147 @@
+@import url('https://fonts.google.com/specimen/Karla');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+
+.wrapper {
+    margin: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 2px 3px 12px 0px rgba(0, 0, 0, .35);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2ab2af;
+    margin-bottom: 20px;
+}
+
+.top-section {
+    padding: 35px;
+    height: 45%;
+    width: 100%;
+}
+
+.top-section .subtitle {
+    color: #c0df34;
+    margin-bottom: 15px;
+}
+
+.top-section p {
+    line-height: 24px;
+    color: #98a6bd;
+}
+
+.subtitle {
+    font: 1.1em;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    color: #fff;
+}
+
+.bottom-left-section {
+    flex-basis: 50%;
+    height: 100%;
+    background: #2ab2af;
+    padding: 35px;
+}
+
+.bottom-right-section {
+    flex-basis: 50%;
+    height: 100%;
+    background: #31c7c5;
+    padding: 35px;
+}
+
+.bottom-left-section .subtitle {
+    margin-bottom: 18px;
+}
+
+.bottom-right-section .subtitle {
+    margin-bottom: 15px;
+}
+
+.bottom-right-section ul {
+    list-style: none;
+}
+
+.bottom-right-section ul li {
+    line-height: 20px;
+    font-size: 0.9em;
+    color: rgba(229, 239, 245, .8);
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.price-frequency {
+    font-size: 0.9rem;
+    color: rgba(229, 239, 245, .8);
+}
+
+.bottom-left-section p {
+    font-size: 0.9rem;
+    color: rgba(229, 239, 245, .9);
+    margin-bottom: 40px;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 12px 12px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background: #c0df34;
+    font-weight: 500;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, .2);
+    transition: 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media (min-width: 576px) {
+    .card {
+        width: 600px;
+        height: 420px;
+    }
+
+    .bottom-section {
+        flex-direction: row;
+    }
+}
